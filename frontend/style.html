@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="NEXTHIRE AI - Modern AI-powered Talent Acquisition and Intelligence Suite">
+  <title>NEXTHIRE AI - Talent Intelligence Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+  <div class="app-shell">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-mark">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+          </svg>
+        </div>
+        <h1>NEXT<span>HIRE</span></h1>
+        <p>AI Talent Suite</p>
+      </div>
+
+      <nav class="nav-list" aria-label="Main Navigation">
+        <a href="#" class="nav-item active">
+          <i data-lucide="layout-dashboard"></i>
+          <span>Dashboard</span>
+        </a>
+        <a href="#" class="nav-item">
+          <i data-lucide="users"></i>
+          <span>Candidates</span>
+        </a>
+        <a href="#" class="nav-item">
+          <i data-lucide="sparkles"></i>
+          <span>AI Matching</span>
+        </a>
+        <a href="#" class="nav-item">
+          <i data-lucide="briefcase"></i>
+          <span>Positions</span>
+        </a>
+        <a href="#" class="nav-item">
+          <i data-lucide="video"></i>
+          <span>Interviews</span>
+        </a>
+        <a href="#" class="nav-item">
+          <i data-lucide="line-chart"></i>
+          <span>Analytics</span>
+        </a>
+        <a href="#" class="nav-item">
+          <i data-lucide="settings"></i>
+          <span>Settings</span>
+        </a>
+      </nav>
+
+      <div class="upgrade-card">
+        <i data-lucide="zap"></i>
+        <h2>Upgrade to Pro</h2>
+        <p>Unlock unlimited AI candidate screening & predictive scoring models.</p>
+        <button type="button">Upgrade Now</button>
+      </div>
+    </aside>
+
+    <!-- Main Dashboard Area -->
+    <main class="dashboard">
+      <header class="topbar">
+        <div class="search">
+          <i data-lucide="search"></i>
+          <input type="text" placeholder="Search candidate, role, skill..." aria-label="Search candidates">
+        </div>
+
+        <div class="top-actions">
+          <button class="icon-btn" title="Notifications" aria-label="Notifications">
+            <i data-lucide="bell"></i>
+          </button>
+          <button class="icon-btn" title="Messages" aria-label="Messages">
+            <i data-lucide="mail"></i>
+          </button>
+          <button class="lang" aria-label="Select language">
+            <i data-lucide="globe"></i>
+            <span>EN</span>
+            <i data-lucide="chevron-down"></i>
+          </button>
+          <div class="profile" tabindex="0">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=120&q=80" alt="Ashutosh Gautam Profile">
+            <span>Ashutosh</span>
+            <i data-lucide="chevron-down"></i>
+          </div>
+        </div>
+      </header>
+
+      <div class="content">
+        <!-- Stats Grid -->
+        <section class="stats-grid" aria-label="Key Hiring Metrics">
+          <div class="stat-card">
+            <div class="stat-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+                <circle cx="9" cy="7" r="4"/>
+                <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+              </svg>
+            </div>
+            <div>
+              <strong>1,420</strong>
+              <p>Total Candidates</p>
+              <small>+12.5% this month</small>
+            </div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <rect width="20" height="14" x="2" y="7" rx="2" ry="2"/>
+                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+              </svg>
+            </div>
+            <div>
+              <strong>48</strong>
+              <p>Active Positions</p>
+              <small>+6 openings added</small>
+            </div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                <polyline points="22 4 12 14.01 9 11.01"/>
+              </svg>
+            </div>
+            <div>
+              <strong>89.4%</strong>
+              <p>AI Match Rate</p>
+              <small>+3.2% precision</small>
+            </div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <circle cx="12" cy="12" r="10"/>
+                <polyline points="12 6 12 12 16 14"/>
+              </svg>
+            </div>
+            <div>
+              <strong>4.2 Days</strong>
+              <p>Time to Hire</p>
+              <small>-35% vs industry avg</small>
+            </div>
+          </div>
+        </section>
+
+        <!-- Main Chart & Sentiment Grid -->
+        <section class="main-grid">
+          <div class="panel">
+            <div class="panel-heading">
+              <div>
+                <h2>Talent Pipeline Trends</h2>
+                <p>Weekly AI candidate processing volume</p>
+              </div>
+              <button class="select-btn" type="button">
+                <span>Weekly</span>
+                <i data-lucide="chevron-down"></i>
+              </button>
+            </div>
+            <div class="chart-wrap">
+              <canvas id="trendChart"></canvas>
+            </div>
+          </div>
+
+          <div class="panel">
+            <div class="panel-heading">
+              <div>
+                <h2>Candidate Sentiment</h2>
+                <p>Real-time post-interview feedback index</p>
+              </div>
+              <button class="select-btn" type="button">
+                <span>Last 7 Days</span>
+                <i data-lucide="chevron-down"></i>
+              </button>
+            </div>
+            <div id="moodBars" class="mood-bars"></div>
+          </div>
+        </section>
+
+        <!-- Pipeline Status & Recent Activity -->
+        <section class="main-grid" style="margin-top: 20px;">
+          <div class="panel states-panel">
+            <div class="panel-heading">
+              <div>
+                <h2>Pipeline Status</h2>
+                <p>Candidate flow across active hiring stages</p>
+              </div>
+            </div>
+            <div class="state-grid">
+              <div class="state-item">
+                <span>🎯</span>
+                <div>
+                  <p>AI Screened</p>
+                  <strong>842 Profiles</strong>
+                </div>
+              </div>
+              <div class="state-item">
+                <span>⚡</span>
+                <div>
+                  <p>Technical Assessment</p>
+                  <strong>318 Candidates</strong>
+                </div>
+              </div>
+              <div class="state-item">
+                <span>💼</span>
+                <div>
+                  <p>Final Round</p>
+                  <strong>74 Extended</strong>
+                </div>
+              </div>
+              <div class="state-item">
+                <span>🌟</span>
+                <div>
+                  <p>Offer Accepted</p>
+                  <strong>58 Hired</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel activity-panel">
+            <div class="panel-heading">
+              <div>
+                <h2>Live Candidate Activity</h2>
+                <p>Recent evaluation milestones</p>
+              </div>
+            </div>
+            <div class="activity-list">
+              <div class="activity-item">
+                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=120&q=80" alt="Sarah Chen">
+                <div>
+                  <strong>Sarah Chen</strong>
+                  <p>Completed AI System Design Assessment (Score: 96%)</p>
+                </div>
+                <time>5m ago</time>
+              </div>
+              <div class="activity-item">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=120&q=80" alt="Marcus Vance">
+                <div>
+                  <strong>Marcus Vance</strong>
+                  <p>Shortlisted for Senior AI Engineer by Auto-Screen</p>
+                </div>
+                <time>18m ago</time>
+              </div>
+              <div class="activity-item">
+                <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=120&q=80" alt="Elena Rostova">
+                <div>
+                  <strong>Elena Rostova</strong>
+                  <p>Accepted offer for Staff Product Designer</p>
+                </div>
+                <time>1h ago</time>
+              </div>
+            </div>
+            <a href="#" class="view-link">
+              <span>View all activity</span>
+              <i data-lucide="arrow-right"></i>
+            </a>
+          </div>
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
